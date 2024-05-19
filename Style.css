@@ -1,0 +1,98 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family: "gilroy";
+    }
+    
+    html,body{ 
+    width:100%; 
+    height:100%; 
+    }
+    
+    #big{
+        width: 100%;
+        height: 100%;
+        background:rgb(169, 196, 169);
+        padding: 70px;
+    }
+    #main{
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        border-radius: 7px;
+        overflow: hidden;
+        position: relative;
+    }
+    #panel-top{
+        width: 100%;
+        height: 80px;
+        background: rgb(92, 131, 92);
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: #fff;
+    }
+    .elem{
+        display: flex;
+        align-items: center;
+        gap: 13px;
+    }
+    .elem h4{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .box{
+        padding: 8px 16px;
+        background: #fff;
+        border-radius: 4px;
+        color: rgb(100, 149, 124);
+        font-size: 20px;
+        font-weight: 600;
+    }
+    
+    #panel-bottom{
+        width: 100%;
+        height: calc(100% - 80px);
+        /* background: #000; */
+        display: flex;
+        gap: 9px;
+        flex-wrap: wrap;
+        padding: 20px 15px;
+    color: white;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .bubble{
+        cursor: pointer;
+        width: 60px;
+        height: 60px;
+        background: rgb(105, 144, 105);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        color: #fff;
+        font-weight: 500;
+        font-size: 15px;
+        transition: all ease 0.1s;
+    }
+    .bubble:hover{
+        background:rgb(75, 106, 75) ;
+    }
+    #main img{
+        width: 100%;
+        /* z-index: -9; */
+        display: none;
+        position: absolute;
+        height: 100%;
+        object-fit: cover;
+        background: #f5ecec00;
+    }
+    #panel-bottom #finalscore{
+    /* position: absolute; */
+    width: 150px;
+    height: 100px;
+    color: #000;
+    }
